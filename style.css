@@ -1,0 +1,65 @@
+body {
+    background: #6c373f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background 0.5s; /* 背景颜色变化过渡 */
+}
+
+button {
+    background-color: #4CAF50; /* 绿色背景 */
+    border: none; /* 去掉边框 */
+    color: white; /* 字体颜色 */
+    padding: 15px 32px; /* 内边距 */
+    text-align: center; /* 文本居中 */
+    text-decoration: none; /* 去掉下划线 */
+    display: inline-block; /* 让按钮显示为行内块元素 */
+    font-size: 16px; /* 字体大小 */
+    margin: 10px; /* 外边距 */
+    cursor: pointer; /* 鼠标悬停时为手型 */
+    border-radius: 5px; /* 圆角 */
+    transition: background-color 0.3s; /* 背景颜色过渡效果 */
+}
+
+button:hover {
+    background-color: #45a049; /* 悬停时的背景颜色 */
+}
+#alice-container {
+    width: 90vh;
+    display: grid;
+    place-items: center;
+    grid-template-areas:
+        "a1 . ."
+        ". a2 ."
+        ". . a3";
+    gap: 20px; /* 增加间距 */
+}
+
+img {
+    width: 600px;
+    height: 600px;
+    border-radius: 15px; /* 圆角 */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* 阴影 */
+    transition: transform 0.3s; /* 过渡效果 */
+}
+
+img:hover {
+    transform: scale(1.05); /* 鼠标悬停时放大 */
+}
+
+.description {
+    color: #fff;
+    text-align: center;
+    opacity: 0; /* 初始隐藏描述 */
+    transition: opacity 0.5s; /* 描述的淡入淡出 */
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
